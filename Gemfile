@@ -33,6 +33,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
 
+  gem 'simplecov', :require => false, :group => :test
   gem "factory_girl_rails", "~> 4.0"
   gem 'rspec-rails'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
