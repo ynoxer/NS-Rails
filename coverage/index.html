@@ -14,7 +14,7 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2015-11-30T20:23:43+02:00">2015-11-30T20:23:43+02:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2015-12-01T20:57:10+02:00">2015-12-01T20:57:10+02:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,15 +25,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.43
+         1.57
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>20</b> files in total.
-    <b>167</b> relevant lines. 
-    <span class="green"><b>167</b> lines covered</span> and
+    <b>22</b> files in total.
+    <b>202</b> relevant lines. 
+    <span class="green"><b>202</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -61,23 +61,33 @@
       </tr>
       
       <tr>
+        <td class="strong"><a href="#f8dd2fa2a4383973d1e0439dd37a75cd46571075" class="src_link" title="app/models/reservation.rb">app/models/reservation.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>4</td>
+        <td>3</td>
+        <td>3</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
         <td class="strong"><a href="#b0c27c6a2965ddbcacabac538d7aa5d274abb453" class="src_link" title="app/models/room.rb">app/models/room.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>49</td>
-        <td>29</td>
-        <td>29</td>
+        <td>61</td>
+        <td>37</td>
+        <td>37</td>
         <td>0</td>
-        <td>2.2</td>
+        <td>2.5</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#4325f7ef5909634509db6b517bbc48a260ab3da3" class="src_link" title="app/models/user.rb">app/models/user.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>31</td>
-        <td>18</td>
-        <td>18</td>
+        <td>40</td>
+        <td>23</td>
+        <td>23</td>
         <td>0</td>
-        <td>1.8</td>
+        <td>2.0</td>
       </tr>
       
       <tr>
@@ -221,23 +231,33 @@
       </tr>
       
       <tr>
+        <td class="strong"><a href="#320c790e7ff58c9358952aa2f25506dfe8148381" class="src_link" title="spec/models/reservation_spec.rb">spec/models/reservation_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>5</td>
+        <td>2</td>
+        <td>2</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
         <td class="strong"><a href="#c5ce01e091f014079779be73cecba4078d8387eb" class="src_link" title="spec/models/room_spec.rb">spec/models/room_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>87</td>
-        <td>48</td>
-        <td>48</td>
+        <td>103</td>
+        <td>56</td>
+        <td>56</td>
         <td>0</td>
-        <td>1.3</td>
+        <td>1.4</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#05a6edae8832d54d93ab332759d7c4054abb53b3" class="src_link" title="spec/models/user_spec.rb">spec/models/user_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>37</td>
-        <td>19</td>
-        <td>19</td>
+        <td>54</td>
+        <td>28</td>
+        <td>28</td>
         <td>0</td>
-        <td>1.4</td>
+        <td>1.5</td>
       </tr>
       
       <tr>
@@ -296,13 +316,55 @@
   </pre>
 </div>
       
+        <div class="source_table" id="f8dd2fa2a4383973d1e0439dd37a75cd46571075">
+  <div class="header">
+    <h3>app/models/reservation.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>3</b> relevant lines. 
+      <span class="green"><b>3</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class Reservation &lt; ActiveRecord::Base</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  belongs_to :user</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  belongs_to :room</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
         <div class="source_table" id="b0c27c6a2965ddbcacabac538d7aa5d274abb453">
   <div class="header">
     <h3>app/models/room.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>29</b> relevant lines. 
-      <span class="green"><b>29</b> lines covered</span> and
+      <b>37</b> relevant lines. 
+      <span class="green"><b>37</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -322,283 +384,355 @@
           <code class="ruby">  belongs_to :user</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="3">
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  has_many :reservations</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="4">
+        <li class="covered" data-hits="1" data-linenumber="5">
           <span class="hits">1</span>
           
           <code class="ruby">  validates :name, presence: true, length: { maximum: 40, minimum: 3 }</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="5">
+        <li class="never" data-hits="" data-linenumber="6">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="6">
+        <li class="covered" data-hits="1" data-linenumber="7">
           <span class="hits">1</span>
           
           <code class="ruby">  def publishable?</code>
         </li>
       
-        <li class="covered" data-hits="7" data-linenumber="7">
-          <span class="hits">7</span>
-          
-          <code class="ruby">    if (self.type == &#39;Draft&#39;) &amp;&amp; (self.valid?) &amp;&amp;</code>
-        </li>
-      
         <li class="covered" data-hits="7" data-linenumber="8">
           <span class="hits">7</span>
           
-          <code class="ruby">       (self.address.present?) &amp;&amp; (self.price.present?)</code>
+          <code class="ruby">    if (state == &#39;Draft&#39;) &amp;&amp; (self.valid?) &amp;&amp;</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="9">
+        <li class="covered" data-hits="7" data-linenumber="9">
+          <span class="hits">7</span>
+          
+          <code class="ruby">       (address.present?) &amp;&amp; (price.present?)</code>
+        </li>
+      
+        <li class="covered" data-hits="5" data-linenumber="10">
           <span class="hits">5</span>
           
           <code class="ruby">      return true</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="10">
+        <li class="never" data-hits="" data-linenumber="11">
           
           
           <code class="ruby">    else</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="11">
+        <li class="covered" data-hits="2" data-linenumber="12">
           <span class="hits">2</span>
           
           <code class="ruby">      return false</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="12">
-          
-          
-          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="13">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="14">
           
           
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="15">
+        <li class="covered" data-hits="1" data-linenumber="16">
           <span class="hits">1</span>
           
           <code class="ruby">  def publish</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="16">
+        <li class="covered" data-hits="5" data-linenumber="17">
           <span class="hits">5</span>
           
           <code class="ruby">    if publishable?</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="17">
-          <span class="hits">4</span>
-          
-          <code class="ruby">      update_attribute(:type, &#39;Published&#39;)</code>
-        </li>
-      
         <li class="covered" data-hits="4" data-linenumber="18">
           <span class="hits">4</span>
           
-          <code class="ruby">      update_attribute(:expiration, Time.now + (60 * 60 * 24 * 30))</code>
+          <code class="ruby">      update_attribute(:state, &#39;Published&#39;)</code>
         </li>
       
         <li class="covered" data-hits="4" data-linenumber="19">
           <span class="hits">4</span>
           
+          <code class="ruby">      update_attribute(:expiration, Time.now + (60 * 60 * 24 * 30))</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="20">
+          <span class="hits">4</span>
+          
           <code class="ruby">      return true</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="20">
+        <li class="never" data-hits="" data-linenumber="21">
           
           
           <code class="ruby">    else</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="21">
+        <li class="covered" data-hits="1" data-linenumber="22">
           <span class="hits">1</span>
           
           <code class="ruby">      return false</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="22">
-          
-          
-          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="23">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="24">
           
           
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="25">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="25">
+        <li class="covered" data-hits="1" data-linenumber="26">
           <span class="hits">1</span>
           
           <code class="ruby">  def revoke</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="26">
+        <li class="covered" data-hits="3" data-linenumber="27">
           <span class="hits">3</span>
           
-          <code class="ruby">    if type == &#39;Published&#39;</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="27">
-          <span class="hits">2</span>
-          
-          <code class="ruby">      update_attribute(:type, &#39;Revoked&#39;)</code>
+          <code class="ruby">    if state == &#39;Published&#39;</code>
         </li>
       
         <li class="covered" data-hits="2" data-linenumber="28">
           <span class="hits">2</span>
           
+          <code class="ruby">      update_attribute(:state, &#39;Revoked&#39;)</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="29">
+          <span class="hits">2</span>
+          
           <code class="ruby">      return true</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="29">
+        <li class="never" data-hits="" data-linenumber="30">
           
           
           <code class="ruby">    else</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="30">
+        <li class="covered" data-hits="1" data-linenumber="31">
           <span class="hits">1</span>
           
           <code class="ruby">      return false</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="31">
-          
-          
-          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="32">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="33">
           
           
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="34">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="34">
+        <li class="covered" data-hits="1" data-linenumber="35">
           <span class="hits">1</span>
           
           <code class="ruby">  def expire</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="35">
+        <li class="covered" data-hits="2" data-linenumber="36">
           <span class="hits">2</span>
           
-          <code class="ruby">    if (type == &#39;Published&#39;) &amp;&amp; (Time.now &gt; expiration)</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="36">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      revoke</code>
+          <code class="ruby">    if (state == &#39;Published&#39;) &amp;&amp; (Time.now &gt; expiration)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="37">
           <span class="hits">1</span>
           
+          <code class="ruby">      revoke</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="38">
+          <span class="hits">1</span>
+          
           <code class="ruby">      return true</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="38">
+        <li class="never" data-hits="" data-linenumber="39">
           
           
           <code class="ruby">    else</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="39">
+        <li class="covered" data-hits="1" data-linenumber="40">
           <span class="hits">1</span>
           
           <code class="ruby">      return false</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="40">
+        <li class="never" data-hits="" data-linenumber="41">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="41">
+        <li class="never" data-hits="" data-linenumber="42">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="42">
+        <li class="never" data-hits="" data-linenumber="43">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="43">
+        <li class="covered" data-hits="1" data-linenumber="44">
           <span class="hits">1</span>
           
           <code class="ruby">  def edit_room(options = {})</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="44">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    self.name = options[:name] || self.name</code>
-        </li>
-      
         <li class="covered" data-hits="1" data-linenumber="45">
           <span class="hits">1</span>
           
-          <code class="ruby">    self.address = options[:address] || self.address</code>
+          <code class="ruby">    self.name = options[:name] || name</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="46">
           <span class="hits">1</span>
           
-          <code class="ruby">    self.price = options[:price] || self.price</code>
+          <code class="ruby">    self.address = options[:address] || address</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="47">
           <span class="hits">1</span>
           
-          <code class="ruby">    self.save</code>
+          <code class="ruby">    self.price = options[:price] || price</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="48">
+        <li class="covered" data-hits="1" data-linenumber="48">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    save</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="49">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="49">
+        <li class="never" data-hits="" data-linenumber="50">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="51">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def reserved?(from, to)</code>
+        </li>
+      
+        <li class="covered" data-hits="5" data-linenumber="52">
+          <span class="hits">5</span>
+          
+          <code class="ruby">    a = (from.to_date..to.to_date)</code>
+        </li>
+      
+        <li class="covered" data-hits="5" data-linenumber="53">
+          <span class="hits">5</span>
+          
+          <code class="ruby">    reserved = false</code>
+        </li>
+      
+        <li class="covered" data-hits="5" data-linenumber="54">
+          <span class="hits">5</span>
+          
+          <code class="ruby">    Reservation.where(room_id: id).find_each do |reservation|</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="55">
+          <span class="hits">3</span>
+          
+          <code class="ruby">      if a.include?(reservation.from) || a.include?(reservation.to)</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="56">
+          <span class="hits">2</span>
+          
+          <code class="ruby">        reserved = true</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="57">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="58">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="covered" data-hits="5" data-linenumber="59">
+          <span class="hits">5</span>
+          
+          <code class="ruby">    reserved</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="60">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="61">
           
           
           <code class="ruby">end</code>
@@ -613,8 +747,8 @@
     <h3>app/models/user.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>18</b> relevant lines. 
-      <span class="green"><b>18</b> lines covered</span> and
+      <b>23</b> relevant lines. 
+      <span class="green"><b>23</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -634,175 +768,229 @@
           <code class="ruby">  has_many :rooms</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="3">
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  has_many :reservations</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
           
           
           <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="4">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  validates :name, presence: true, length: { maximum: 20, minimum: 3 }</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="5">
           <span class="hits">1</span>
           
-          <code class="ruby">  VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i</code>
+          <code class="ruby">  validates :name, presence: true, length: { maximum: 20, minimum: 3 }</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="6">
           <span class="hits">1</span>
           
-          <code class="ruby">  validates :email, presence: true, length: { maximum: 255 },</code>
+          <code class="ruby">  VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="7">
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">            format: { with: VALID_EMAIL_REGEX }</code>
+          <code class="ruby">  validates :email, presence: true, length: { maximum: 255 },</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="8">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">            format: { with: VALID_EMAIL_REGEX }</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="9">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="9">
           
-          <code class="ruby">  after_initialize :default</code>
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="10">
           <span class="hits">1</span>
           
+          <code class="ruby">  after_initialize :default</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="11">
+          <span class="hits">1</span>
+          
           <code class="ruby">  def default</code>
         </li>
       
-        <li class="covered" data-hits="13" data-linenumber="11">
-          <span class="hits">13</span>
+        <li class="covered" data-hits="19" data-linenumber="12">
+          <span class="hits">19</span>
           
-          <code class="ruby">    self.type  ||= &#39;Free&#39;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="12">
-          
-          
-          <code class="ruby">  end</code>
+          <code class="ruby">    self.state  ||= &#39;Free&#39;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="13">
           
           
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="14">
+        <li class="covered" data-hits="1" data-linenumber="15">
           <span class="hits">1</span>
           
           <code class="ruby">  def upgrade</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="15">
+        <li class="covered" data-hits="2" data-linenumber="16">
           <span class="hits">2</span>
           
-          <code class="ruby">    if self.type == &#39;Free&#39;</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="16">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      self.type = &#39;Host&#39;</code>
+          <code class="ruby">    if self.state == &#39;Free&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="17">
           <span class="hits">1</span>
           
+          <code class="ruby">      self.state = &#39;Host&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="18">
+          <span class="hits">1</span>
+          
           <code class="ruby">      return true</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="18">
+        <li class="never" data-hits="" data-linenumber="19">
           
           
           <code class="ruby">    else</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="19">
+        <li class="covered" data-hits="1" data-linenumber="20">
           <span class="hits">1</span>
           
           <code class="ruby">      return false</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="20">
-          
-          
-          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="21">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="22">
           
           
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="23">
+        <li class="covered" data-hits="1" data-linenumber="24">
           <span class="hits">1</span>
           
           <code class="ruby">  def new_room(name)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="24">
+        <li class="covered" data-hits="2" data-linenumber="25">
           <span class="hits">2</span>
           
-          <code class="ruby">    if self.type == &#39;Host&#39;</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="25">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      self.rooms.create(:name =&gt; name)</code>
+          <code class="ruby">    if state == &#39;Host&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="26">
           <span class="hits">1</span>
           
+          <code class="ruby">      rooms.create(:name =&gt; name)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="27">
+          <span class="hits">1</span>
+          
           <code class="ruby">      return true</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="27">
+        <li class="never" data-hits="" data-linenumber="28">
           
           
           <code class="ruby">    else</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="28">
+        <li class="covered" data-hits="1" data-linenumber="29">
           <span class="hits">1</span>
           
           <code class="ruby">      return false</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="29">
+        <li class="never" data-hits="" data-linenumber="30">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="30">
+        <li class="never" data-hits="" data-linenumber="31">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="31">
+        <li class="never" data-hits="" data-linenumber="32">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="33">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def reserve_room(room_id, from, to)</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="34">
+          <span class="hits">3</span>
+          
+          <code class="ruby">    if Room.find(room_id).reserved?(from, to)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="35">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      return false</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="36">
+          
+          
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="37">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      Reservation.create(user_id: id, room_id: room_id, from: from.to_date, to: to.to_date)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="38">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="39">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="40">
           
           
           <code class="ruby">end</code>
@@ -2227,7 +2415,7 @@
         <li class="covered" data-hits="1" data-linenumber="1">
           <span class="hits">1</span>
           
-          <code class="ruby">FactoryGirl.define do</code>
+          <code class="ruby">FactoryGirl.define do  </code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="2">
@@ -2263,7 +2451,7 @@
         <li class="covered" data-hits="1" data-linenumber="7">
           <span class="hits">1</span>
           
-          <code class="ruby">    type &#39;Free&#39;</code>
+          <code class="ruby">    state &#39;Free&#39;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="8">
@@ -2305,7 +2493,7 @@
         <li class="covered" data-hits="1" data-linenumber="14">
           <span class="hits">1</span>
           
-          <code class="ruby">    type &#39;Draft&#39;</code>
+          <code class="ruby">    state &#39;Draft&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="15">
@@ -2330,13 +2518,61 @@
   </pre>
 </div>
       
+        <div class="source_table" id="320c790e7ff58c9358952aa2f25506dfe8148381">
+  <div class="header">
+    <h3>spec/models/reservation_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>2</b> relevant lines. 
+      <span class="green"><b>2</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;rails_helper&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">RSpec.describe Reservation, type: :model do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
         <div class="source_table" id="c5ce01e091f014079779be73cecba4078d8387eb">
   <div class="header">
     <h3>spec/models/room_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>48</b> relevant lines. 
-      <span class="green"><b>48</b> lines covered</span> and
+      <b>56</b> relevant lines. 
+      <span class="green"><b>56</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -2464,8 +2700,8 @@
           <code class="ruby">  context &#39;room is publishable&#39; do</code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="21">
-          <span class="hits">8</span>
+        <li class="covered" data-hits="10" data-linenumber="21">
+          <span class="hits">10</span>
           
           <code class="ruby">    let(:room) { create(:room) }</code>
         </li>
@@ -2539,7 +2775,7 @@
         <li class="covered" data-hits="2" data-linenumber="33">
           <span class="hits">2</span>
           
-          <code class="ruby">        end.to change { room.type }.from(&#39;Draft&#39;).to(&#39;Published&#39;)</code>
+          <code class="ruby">        end.to change { room.state }.from(&#39;Draft&#39;).to(&#39;Published&#39;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="34">
@@ -2653,7 +2889,7 @@
         <li class="covered" data-hits="2" data-linenumber="52">
           <span class="hits">2</span>
           
-          <code class="ruby">          end.to change { room.type }.from(&#39;Published&#39;).to(&#39;Revoked&#39;)</code>
+          <code class="ruby">          end.to change { room.state }.from(&#39;Published&#39;).to(&#39;Revoked&#39;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="53">
@@ -2803,7 +3039,7 @@
         <li class="covered" data-hits="1" data-linenumber="77">
           <span class="hits">1</span>
           
-          <code class="ruby">          room.publish</code>
+          <code class="ruby">          puts room.publish</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="78">
@@ -2833,7 +3069,7 @@
         <li class="covered" data-hits="4" data-linenumber="82">
           <span class="hits">4</span>
           
-          <code class="ruby">          expect{ room.expire }.to change { room.type }.from(&#39;Published&#39;).to(&#39;Revoked&#39;)</code>
+          <code class="ruby">          expect{ room.expire }.to change { room.state }.from(&#39;Published&#39;).to(&#39;Revoked&#39;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="83">
@@ -2857,10 +3093,106 @@
         <li class="never" data-hits="" data-linenumber="86">
           
           
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="87">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    describe &#39;#reserved?&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="88">
+          <span class="hits">3</span>
+          
+          <code class="ruby">      before { Reservation.create(user_id: room.user_id, room_id: room.id, from: &#39;Nov 13&#39;.to_date, to: &#39;Nov 15&#39;.to_date) }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="89">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="90">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      context &#39;room is NOT reserved for the given time period&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="91">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        it &#39;returns false&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="92">
+          <span class="hits">1</span>
+          
+          <code class="ruby">          expect(room.reserved?(&#39;Nov 10&#39;, &#39;Nov 12&#39;)).to be false</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="93">
+          
+          
+          <code class="ruby">        end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="94">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="95">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="96">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      context &#39;room is reserved for the given time period&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="97">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        it &#39;returns true&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="98">
+          <span class="hits">1</span>
+          
+          <code class="ruby">          expect(room.reserved?(&#39;Nov 10&#39;, &#39;Nov 13&#39;)).to be true</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="99">
+          
+          
+          <code class="ruby">        end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="100">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="101">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="102">
+          
+          
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="87">
+        <li class="never" data-hits="" data-linenumber="103">
           
           
           <code class="ruby">end</code>
@@ -2875,8 +3207,8 @@
     <h3>spec/models/user_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>19</b> relevant lines. 
-      <span class="green"><b>19</b> lines covered</span> and
+      <b>28</b> relevant lines. 
+      <span class="green"><b>28</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -2911,7 +3243,7 @@
         <li class="covered" data-hits="3" data-linenumber="5">
           <span class="hits">3</span>
           
-          <code class="ruby">    let(:user) { create(:user, type: &#39;Host&#39;) }</code>
+          <code class="ruby">    let(:user) { create(:user, state: &#39;Host&#39;) }</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="6">
@@ -3016,10 +3348,10 @@
           <code class="ruby">  context &#39;user is not a host&#39; do</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="23">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="5" data-linenumber="23">
+          <span class="hits">5</span>
           
-          <code class="ruby">    let(:user) { create(:user, name: &#39;name1&#39;) }</code>
+          <code class="ruby">    let(:user) { create(:user) }</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="24">
@@ -3073,13 +3405,13 @@
         <li class="covered" data-hits="1" data-linenumber="32">
           <span class="hits">1</span>
           
-          <code class="ruby">      it &#39;changes users type to Host&#39; do</code>
+          <code class="ruby">      it &#39;changes users state to Host&#39; do</code>
         </li>
       
         <li class="covered" data-hits="4" data-linenumber="33">
           <span class="hits">4</span>
           
-          <code class="ruby">        expect { user.upgrade }.to change { user.type }.from(&#39;Free&#39;).to(&#39;Host&#39;)</code>
+          <code class="ruby">        expect { user.upgrade }.to change { user.state }.from(&#39;Free&#39;).to(&#39;Host&#39;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="34">
@@ -3097,10 +3429,112 @@
         <li class="never" data-hits="" data-linenumber="36">
           
           
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="37">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    describe &#39;#reserve_room&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="38">
+          <span class="hits">3</span>
+          
+          <code class="ruby">      let(:room) { create(:room) }</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="39">
+          <span class="hits">3</span>
+          
+          <code class="ruby">      before { user.reserve_room(room.id ,&#39;Nov 10&#39;, &#39;Nov 23&#39;) }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="40">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="41">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      context &#39;room is NOT reserved for the given time period&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="42">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        it &#39;reserves the given time period&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="43">
+          <span class="hits">1</span>
+          
+          <code class="ruby">          expect(Reservation.find_by(room_id: room.id, from: &#39;Nov 10&#39;.to_date, to: &#39;Nov 23&#39;.to_date)).not_to be_nil</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="44">
+          
+          
+          <code class="ruby">        end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="45">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="46">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="47">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      context &#39;room is reserved for the given time period&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="48">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        it &#39;returs false&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="49">
+          <span class="hits">1</span>
+          
+          <code class="ruby">          expect(user.reserve_room(1, &#39;Nov 8&#39;, &#39;Nov 13&#39;)).to be false</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="50">
+          
+          
+          <code class="ruby">        end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="51">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="52">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="53">
+          
+          
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="37">
+        <li class="never" data-hits="" data-linenumber="54">
           
           
           <code class="ruby">end</code>

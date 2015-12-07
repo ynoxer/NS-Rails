@@ -1,11 +1,12 @@
 class Room < ActiveRecord::Base
   belongs_to :user
+  has_many :reservations
 
   validates :name, presence: true, length: { maximum: 40, minimum: 3 }
 
   def publishable?
-    if (self.type == 'Draft') && (self.valid?) &&
-       (self.address.present?) && (self.price.present?)
+    if (state == 'Draft') && (self.valid?) &&
+       (address.present?) && (price.present?)
       return true
     else
       return false
@@ -14,7 +15,7 @@ class Room < ActiveRecord::Base
 
   def publish
     if publishable?
-      update_attribute(:type, 'Published')
+      update_attribute(:state, 'Published')
       update_attribute(:expiration, Time.now + (60 * 60 * 24 * 30))
       return true
     else
@@ -23,8 +24,8 @@ class Room < ActiveRecord::Base
   end
 
   def revoke
-    if type == 'Published'
-      update_attribute(:type, 'Revoked')
+    if state == 'Published'
+      update_attribute(:state, 'Revoked')
       return true
     else
       return false
@@ -32,7 +33,7 @@ class Room < ActiveRecord::Base
   end
 
   def expire
-    if (type == 'Published') && (Time.now > expiration)
+    if (state == 'Published') && (Time.now > expiration)
       revoke
       return true
     else
@@ -41,9 +42,20 @@ class Room < ActiveRecord::Base
   end
 
   def edit_room(options = {})
-    self.name = options[:name] || self.name
-    self.address = options[:address] || self.address
-    self.price = options[:price] || self.price
-    self.save
+    self.name = options[:name] || name
+    self.address = options[:address] || address
+    self.price = options[:price] || price
+    save
+  end
+
+  def reserved?(from, to)
+    a = (from.to_date..to.to_date)
+    reserved = false
+    Reservation.where(room_id: id).find_each do |reservation|
+      if a.include?(reservation.from) || a.include?(reservation.to)
+        reserved = true
+      end
+    end
+    reserved
   end
 end

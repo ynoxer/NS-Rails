@@ -30,7 +30,7 @@ RSpec.describe Room, type: :model do
       it 'changes room state to published' do
         expect do
           room.publish
-        end.to change { room.type }.from('Draft').to('Published')
+        end.to change { room.state }.from('Draft').to('Published')
       end
     end
 
@@ -49,7 +49,7 @@ RSpec.describe Room, type: :model do
         it 'changes state to Revoked' do
           expect do
             room.revoke
-          end.to change { room.type }.from('Published').to('Revoked')
+          end.to change { room.state }.from('Published').to('Revoked')
         end
       end
 
@@ -79,7 +79,23 @@ RSpec.describe Room, type: :model do
         end
 
         it 'changes state to Revoked' do
-          expect{ room.expire }.to change { room.type }.from('Published').to('Revoked')
+          expect{ room.expire }.to change { room.state }.from('Published').to('Revoked')
+        end
+      end
+    end
+
+    describe '#reserved?' do
+      before { Reservation.create(user_id: room.user_id, room_id: room.id, from: 'Nov 13'.to_date, to: 'Nov 15'.to_date) }
+
+      context 'room is NOT reserved for the given time period' do
+        it 'returns false' do
+          expect(room.reserved?('Nov 10', 'Nov 12')).to be false
+        end
+      end
+
+      context 'room is reserved for the given time period' do
+        it 'returns true' do
+          expect(room.reserved?('Nov 10', 'Nov 13')).to be true
         end
       end
     end

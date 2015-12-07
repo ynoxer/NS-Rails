@@ -1,5 +1,6 @@
 class User < ActiveRecord::Base
   has_many :rooms
+  has_many :reservations
 
   validates :name, presence: true, length: { maximum: 20, minimum: 3 }
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
@@ -8,12 +9,12 @@ class User < ActiveRecord::Base
 
   after_initialize :default
   def default
-    self.type  ||= 'Free'
+    self.state  ||= 'Free'
   end
 
   def upgrade
-    if self.type == 'Free'
-      self.type = 'Host'
+    if self.state == 'Free'
+      self.state = 'Host'
       return true
     else
       return false
@@ -21,11 +22,19 @@ class User < ActiveRecord::Base
   end
 
   def new_room(name)
-    if self.type == 'Host'
-      self.rooms.create(:name => name)
+    if state == 'Host'
+      rooms.create(:name => name)
       return true
     else
       return false
+    end
+  end
+
+  def reserve_room(room_id, from, to)
+    if Room.find(room_id).reserved?(from, to)
+      return false
+    else
+      Reservation.create(user_id: id, room_id: room_id, from: from.to_date, to: to.to_date)
     end
   end
 end
