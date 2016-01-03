@@ -38,6 +38,12 @@ RSpec.describe User, type: :model do
       let(:room) { create(:room) }
       before { user.reserve_room(room.id ,'Nov 10', 'Nov 23') }
 
+      context 'room is NOT reserved for the given day' do
+        it 'reserves the given day' do
+          expect(user.reserve_room(1, 'Nov 3', 'Nov 3')).to eq (Reservation.find_by(room_id: room.id, from: 'Nov 3'.to_date, to: 'Nov 3'.to_date))
+        end
+      end
+
       context 'room is NOT reserved for the given time period' do
         it 'reserves the given time period' do
           expect(Reservation.find_by(room_id: room.id, from: 'Nov 10'.to_date, to: 'Nov 23'.to_date)).not_to be_nil

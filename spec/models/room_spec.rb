@@ -93,9 +93,15 @@ RSpec.describe Room, type: :model do
         end
       end
 
-      context 'room is reserved for the given time period' do
+      context 'room is reserved for the exact same days' do
         it 'returns true' do
-          expect(room.reserved?('Nov 10', 'Nov 13')).to be true
+          expect(room.reserved?('Nov 13', 'Nov 15')).to be true
+        end
+      end
+
+      context 'room is reserved in the middle of given days' do
+        it 'returns true' do
+          expect(room.reserved?('Nov 11', 'Nov 16')).to be true
         end
       end
     end
