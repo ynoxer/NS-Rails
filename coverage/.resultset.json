@@ -255,9 +255,10 @@
         1,
         null,
         1,
+        23,
         1,
         1,
-        1,
+        23,
         1,
         null,
         null,
@@ -272,12 +273,16 @@
       ],
       "/home/lukas/Ruby/NS Rails/config/routes.rb": [
         1,
-        1,
         null,
         1,
         null,
         1,
         null,
+        1,
+        null,
+        1,
+        null,
+        1,
         null,
         null,
         null,
@@ -336,14 +341,30 @@
       ],
       "/home/lukas/Ruby/NS Rails/app/helpers/application_helper.rb": [
         1,
+        null,
+        1,
+        0,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null,
         null
       ],
       "/home/lukas/Ruby/NS Rails/app/helpers/static_pages_helper.rb": [
         1,
         null
       ],
+      "/home/lukas/Ruby/NS Rails/app/helpers/users_helper.rb": [
+        1,
+        null
+      ],
       "/home/lukas/Ruby/NS Rails/app/controllers/static_pages_controller.rb": [
         1,
+        1,
+        null,
+        null,
         1,
         null,
         null,
@@ -361,7 +382,44 @@
         1,
         null
       ],
+      "/home/lukas/Ruby/NS Rails/spec/controllers/users_controller_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/home/lukas/Ruby/NS Rails/app/controllers/users_controller.rb": [
+        1,
+        1,
+        null,
+        null
+      ],
       "/home/lukas/Ruby/NS Rails/spec/helpers/static_pages_helper_spec.rb": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/home/lukas/Ruby/NS Rails/spec/helpers/users_helper_spec.rb": [
         1,
         null,
         null,
@@ -632,10 +690,21 @@
         1,
         1,
         null,
+        23,
+        null,
         1,
+        null,
+        null,
+        null,
+        null,
         1,
         1,
         null,
+        null,
+        null,
+        null,
+        1,
+        1,
         null,
         1,
         1,
@@ -682,8 +751,15 @@
         1,
         1,
         null
+      ],
+      "/home/lukas/Ruby/NS Rails/spec/views/users/new.html.erb_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        null
       ]
     },
-    "timestamp": 1451838531
+    "timestamp": 1452110930
   }
 }
